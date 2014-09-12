@@ -1,0 +1,14 @@
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Release\ApplicationIcon.png
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Release\Background.png
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Release\SDAHymnal.dll
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Release\SDAHymnal.pdb
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Release\AppManifest.xaml
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Release\SDAHymnal.xap
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Release\Microsoft.Phone.Controls.xml
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\obj\Release\App.g.i.cs
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\obj\Release\MainPage.g.i.cs
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\obj\Release\SDAHymnal.g.resources
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\obj\Release\SDAHymnal.dll
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\obj\Release\SDAHymnal.pdb
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\obj\Release\XapCacheFile.xml

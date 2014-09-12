@@ -1,0 +1,15 @@
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Debug\ApplicationIcon.png
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Debug\Background.png
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Debug\SDAHymnal.dll
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Debug\SDAHymnal.pdb
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Debug\AppManifest.xaml
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Debug\SDAHymnal.xap
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\obj\Debug\App.g.cs
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\obj\Debug\MainPage.g.cs
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\obj\Debug\SDAHymnal.g.resources
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\obj\Debug\SDAHymnal.dll
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\obj\Debug\SDAHymnal.pdb
+C:\Users\Igor\Documents\Expression\Blend 4\Projects\SDAHymnal\SDAHymnal\obj\Debug\XapCacheFile.xml

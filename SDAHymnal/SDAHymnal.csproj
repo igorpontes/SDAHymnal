@@ -1,0 +1,811 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6343446-1736-4295-88AC-E363C8F73460}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SDAHymnal</RootNamespace>
+    <AssemblyName>SDAHymnal</AssemblyName>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SilverlightVersion>v4.0</SilverlightVersion>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>SDAHymnal.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>SDAHymnal.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.30422.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ItemViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <DesignData Include="SampleData\MainViewModelSampleData.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </DesignData>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+    <None Include="SDAHymnal_05_12_2011_15_23_41.sap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Archive\1.txt" />
+    <Content Include="Archive\10.txt" />
+    <Content Include="Archive\100.txt" />
+    <Content Include="Archive\101.txt" />
+    <Content Include="Archive\102.txt" />
+    <Content Include="Archive\103.txt" />
+    <Content Include="Archive\104.txt" />
+    <Content Include="Archive\105.txt" />
+    <Content Include="Archive\106.txt" />
+    <Content Include="Archive\107.txt" />
+    <Content Include="Archive\108.txt" />
+    <Content Include="Archive\109.txt" />
+    <Content Include="Archive\11.txt" />
+    <Content Include="Archive\110.txt" />
+    <Content Include="Archive\111.txt" />
+    <Content Include="Archive\112.txt" />
+    <Content Include="Archive\113.txt" />
+    <Content Include="Archive\114.txt" />
+    <Content Include="Archive\115.txt" />
+    <Content Include="Archive\116.txt" />
+    <Content Include="Archive\117.txt" />
+    <Content Include="Archive\118.txt" />
+    <Content Include="Archive\119.txt" />
+    <Content Include="Archive\12.txt" />
+    <Content Include="Archive\120.txt" />
+    <Content Include="Archive\121.txt" />
+    <Content Include="Archive\122.txt" />
+    <Content Include="Archive\123.txt" />
+    <Content Include="Archive\124.txt" />
+    <Content Include="Archive\125.txt" />
+    <Content Include="Archive\126.txt" />
+    <Content Include="Archive\127.txt" />
+    <Content Include="Archive\128.txt" />
+    <Content Include="Archive\129.txt" />
+    <Content Include="Archive\13.txt" />
+    <Content Include="Archive\130.txt" />
+    <Content Include="Archive\131.txt" />
+    <Content Include="Archive\132.txt" />
+    <Content Include="Archive\133.txt" />
+    <Content Include="Archive\134.txt" />
+    <Content Include="Archive\135.txt" />
+    <Content Include="Archive\136.txt" />
+    <Content Include="Archive\137.txt" />
+    <Content Include="Archive\138.txt" />
+    <Content Include="Archive\139.txt" />
+    <Content Include="Archive\14.txt" />
+    <Content Include="Archive\140.txt" />
+    <Content Include="Archive\141.txt" />
+    <Content Include="Archive\142.txt" />
+    <Content Include="Archive\143.txt" />
+    <Content Include="Archive\144.txt" />
+    <Content Include="Archive\145.txt" />
+    <Content Include="Archive\146.txt" />
+    <Content Include="Archive\147.txt" />
+    <Content Include="Archive\148.txt" />
+    <Content Include="Archive\149.txt" />
+    <Content Include="Archive\15.txt" />
+    <Content Include="Archive\150.txt" />
+    <Content Include="Archive\151.txt" />
+    <Content Include="Archive\152.txt" />
+    <Content Include="Archive\153.txt" />
+    <Content Include="Archive\154.txt" />
+    <Content Include="Archive\155.txt" />
+    <Content Include="Archive\156.txt" />
+    <Content Include="Archive\157.txt" />
+    <Content Include="Archive\158.txt" />
+    <Content Include="Archive\159.txt" />
+    <Content Include="Archive\16.txt" />
+    <Content Include="Archive\160.txt" />
+    <Content Include="Archive\161.txt" />
+    <Content Include="Archive\162.txt" />
+    <Content Include="Archive\163.txt" />
+    <Content Include="Archive\164.txt" />
+    <Content Include="Archive\165.txt" />
+    <Content Include="Archive\166.txt" />
+    <Content Include="Archive\167.txt" />
+    <Content Include="Archive\168.txt" />
+    <Content Include="Archive\169.txt" />
+    <Content Include="Archive\17.txt" />
+    <Content Include="Archive\170.txt" />
+    <Content Include="Archive\171.txt" />
+    <Content Include="Archive\172.txt" />
+    <Content Include="Archive\173.txt" />
+    <Content Include="Archive\174.txt" />
+    <Content Include="Archive\175.txt" />
+    <Content Include="Archive\176.txt" />
+    <Content Include="Archive\177.txt" />
+    <Content Include="Archive\178.txt" />
+    <Content Include="Archive\179.txt" />
+    <Content Include="Archive\18.txt" />
+    <Content Include="Archive\180.txt" />
+    <Content Include="Archive\181.txt" />
+    <Content Include="Archive\182.txt" />
+    <Content Include="Archive\183.txt" />
+    <Content Include="Archive\184.txt" />
+    <Content Include="Archive\185.txt" />
+    <Content Include="Archive\186.txt" />
+    <Content Include="Archive\187.txt" />
+    <Content Include="Archive\188.txt" />
+    <Content Include="Archive\189.txt" />
+    <Content Include="Archive\19.txt" />
+    <Content Include="Archive\190.txt" />
+    <Content Include="Archive\191.txt" />
+    <Content Include="Archive\192.txt" />
+    <Content Include="Archive\193.txt" />
+    <Content Include="Archive\194.txt" />
+    <Content Include="Archive\195.txt" />
+    <Content Include="Archive\196.txt" />
+    <Content Include="Archive\197.txt" />
+    <Content Include="Archive\198.txt" />
+    <Content Include="Archive\199.txt" />
+    <Content Include="Archive\2.txt" />
+    <Content Include="Archive\20.txt" />
+    <Content Include="Archive\200.txt" />
+    <Content Include="Archive\201.txt" />
+    <Content Include="Archive\202.txt" />
+    <Content Include="Archive\203.txt" />
+    <Content Include="Archive\204.txt" />
+    <Content Include="Archive\205.txt" />
+    <Content Include="Archive\206.txt" />
+    <Content Include="Archive\207.txt" />
+    <Content Include="Archive\208.txt" />
+    <Content Include="Archive\209.txt" />
+    <Content Include="Archive\21.txt" />
+    <Content Include="Archive\210.txt" />
+    <Content Include="Archive\211.txt" />
+    <Content Include="Archive\212.txt" />
+    <Content Include="Archive\213.txt" />
+    <Content Include="Archive\214.txt" />
+    <Content Include="Archive\215.txt" />
+    <Content Include="Archive\216.txt" />
+    <Content Include="Archive\217.txt" />
+    <Content Include="Archive\218.txt" />
+    <Content Include="Archive\219.txt" />
+    <Content Include="Archive\22.txt" />
+    <Content Include="Archive\220.txt" />
+    <Content Include="Archive\221.txt" />
+    <Content Include="Archive\222.txt" />
+    <Content Include="Archive\223.txt" />
+    <Content Include="Archive\224.txt" />
+    <Content Include="Archive\225.txt" />
+    <Content Include="Archive\226.txt" />
+    <Content Include="Archive\227.txt" />
+    <Content Include="Archive\228.txt" />
+    <Content Include="Archive\229.txt" />
+    <Content Include="Archive\23.txt" />
+    <Content Include="Archive\230.txt" />
+    <Content Include="Archive\231.txt" />
+    <Content Include="Archive\232.txt" />
+    <Content Include="Archive\233.txt" />
+    <Content Include="Archive\234.txt" />
+    <Content Include="Archive\235.txt" />
+    <Content Include="Archive\236.txt" />
+    <Content Include="Archive\237.txt" />
+    <Content Include="Archive\238.txt" />
+    <Content Include="Archive\239.txt" />
+    <Content Include="Archive\24.txt" />
+    <Content Include="Archive\240.txt" />
+    <Content Include="Archive\241.txt" />
+    <Content Include="Archive\242.txt" />
+    <Content Include="Archive\243.txt" />
+    <Content Include="Archive\244.txt" />
+    <Content Include="Archive\245.txt" />
+    <Content Include="Archive\246.txt" />
+    <Content Include="Archive\247.txt" />
+    <Content Include="Archive\248.txt" />
+    <Content Include="Archive\249.txt" />
+    <Content Include="Archive\25.txt" />
+    <Content Include="Archive\250.txt" />
+    <Content Include="Archive\251.txt" />
+    <Content Include="Archive\252.txt" />
+    <Content Include="Archive\253.txt" />
+    <Content Include="Archive\254.txt" />
+    <Content Include="Archive\255.txt" />
+    <Content Include="Archive\256.txt" />
+    <Content Include="Archive\257.txt" />
+    <Content Include="Archive\258.txt" />
+    <Content Include="Archive\259.txt" />
+    <Content Include="Archive\26.txt" />
+    <Content Include="Archive\260.txt" />
+    <Content Include="Archive\261.txt" />
+    <Content Include="Archive\262.txt" />
+    <Content Include="Archive\263.txt" />
+    <Content Include="Archive\264.txt" />
+    <Content Include="Archive\265.txt" />
+    <Content Include="Archive\266.txt" />
+    <Content Include="Archive\267.txt" />
+    <Content Include="Archive\268.txt" />
+    <Content Include="Archive\269.txt" />
+    <Content Include="Archive\27.txt" />
+    <Content Include="Archive\270.txt" />
+    <Content Include="Archive\271.txt" />
+    <Content Include="Archive\272.txt" />
+    <Content Include="Archive\273.txt" />
+    <Content Include="Archive\274.txt" />
+    <Content Include="Archive\275.txt" />
+    <Content Include="Archive\276.txt" />
+    <Content Include="Archive\277.txt" />
+    <Content Include="Archive\278.txt" />
+    <Content Include="Archive\279.txt" />
+    <Content Include="Archive\28.txt" />
+    <Content Include="Archive\280.txt" />
+    <Content Include="Archive\281.txt" />
+    <Content Include="Archive\282.txt" />
+    <Content Include="Archive\283.txt" />
+    <Content Include="Archive\284.txt" />
+    <Content Include="Archive\285.txt" />
+    <Content Include="Archive\286.txt" />
+    <Content Include="Archive\287.txt" />
+    <Content Include="Archive\288.txt" />
+    <Content Include="Archive\289.txt" />
+    <Content Include="Archive\29.txt" />
+    <Content Include="Archive\290.txt" />
+    <Content Include="Archive\291.txt" />
+    <Content Include="Archive\292.txt" />
+    <Content Include="Archive\293.txt" />
+    <Content Include="Archive\294.txt" />
+    <Content Include="Archive\295.txt" />
+    <Content Include="Archive\296.txt" />
+    <Content Include="Archive\297.txt" />
+    <Content Include="Archive\298.txt" />
+    <Content Include="Archive\299.txt" />
+    <Content Include="Archive\3.txt" />
+    <Content Include="Archive\30.txt" />
+    <Content Include="Archive\300.txt" />
+    <Content Include="Archive\301.txt" />
+    <Content Include="Archive\302.txt" />
+    <Content Include="Archive\303.txt" />
+    <Content Include="Archive\304.txt" />
+    <Content Include="Archive\305.txt" />
+    <Content Include="Archive\306.txt" />
+    <Content Include="Archive\307.txt" />
+    <Content Include="Archive\308.txt" />
+    <Content Include="Archive\309.txt" />
+    <Content Include="Archive\31.txt" />
+    <Content Include="Archive\310.txt" />
+    <Content Include="Archive\311.txt" />
+    <Content Include="Archive\312.txt" />
+    <Content Include="Archive\313.txt" />
+    <Content Include="Archive\314.txt" />
+    <Content Include="Archive\315.txt" />
+    <Content Include="Archive\316.txt" />
+    <Content Include="Archive\317.txt" />
+    <Content Include="Archive\318.txt" />
+    <Content Include="Archive\319.txt" />
+    <Content Include="Archive\32.txt" />
+    <Content Include="Archive\320.txt" />
+    <Content Include="Archive\321.txt" />
+    <Content Include="Archive\322.txt" />
+    <Content Include="Archive\323.txt" />
+    <Content Include="Archive\324.txt" />
+    <Content Include="Archive\325.txt" />
+    <Content Include="Archive\326.txt" />
+    <Content Include="Archive\327.txt" />
+    <Content Include="Archive\328.txt" />
+    <Content Include="Archive\329.txt" />
+    <Content Include="Archive\33.txt" />
+    <Content Include="Archive\330.txt" />
+    <Content Include="Archive\331.txt" />
+    <Content Include="Archive\332.txt" />
+    <Content Include="Archive\333.txt" />
+    <Content Include="Archive\334.txt" />
+    <Content Include="Archive\335.txt" />
+    <Content Include="Archive\336.txt" />
+    <Content Include="Archive\337.txt" />
+    <Content Include="Archive\338.txt" />
+    <Content Include="Archive\339.txt" />
+    <Content Include="Archive\34.txt" />
+    <Content Include="Archive\340.txt" />
+    <Content Include="Archive\341.txt" />
+    <Content Include="Archive\342.txt" />
+    <Content Include="Archive\343.txt" />
+    <Content Include="Archive\344.txt" />
+    <Content Include="Archive\345.txt" />
+    <Content Include="Archive\346.txt" />
+    <Content Include="Archive\347.txt" />
+    <Content Include="Archive\348.txt" />
+    <Content Include="Archive\349.txt" />
+    <Content Include="Archive\35.txt" />
+    <Content Include="Archive\350.txt" />
+    <Content Include="Archive\351.txt" />
+    <Content Include="Archive\352.txt" />
+    <Content Include="Archive\353.txt" />
+    <Content Include="Archive\354.txt" />
+    <Content Include="Archive\355.txt" />
+    <Content Include="Archive\356.txt" />
+    <Content Include="Archive\357.txt" />
+    <Content Include="Archive\358.txt" />
+    <Content Include="Archive\359.txt" />
+    <Content Include="Archive\36.txt" />
+    <Content Include="Archive\360.txt" />
+    <Content Include="Archive\361.txt" />
+    <Content Include="Archive\362.txt" />
+    <Content Include="Archive\363.txt" />
+    <Content Include="Archive\364.txt" />
+    <Content Include="Archive\365.txt" />
+    <Content Include="Archive\366.txt" />
+    <Content Include="Archive\367.txt" />
+    <Content Include="Archive\368.txt" />
+    <Content Include="Archive\369.txt" />
+    <Content Include="Archive\37.txt" />
+    <Content Include="Archive\370.txt" />
+    <Content Include="Archive\371.txt" />
+    <Content Include="Archive\372.txt" />
+    <Content Include="Archive\373.txt" />
+    <Content Include="Archive\374.txt" />
+    <Content Include="Archive\375.txt" />
+    <Content Include="Archive\376.txt" />
+    <Content Include="Archive\377.txt" />
+    <Content Include="Archive\378.txt" />
+    <Content Include="Archive\379.txt" />
+    <Content Include="Archive\38.txt" />
+    <Content Include="Archive\380.txt" />
+    <Content Include="Archive\381.txt" />
+    <Content Include="Archive\382.txt" />
+    <Content Include="Archive\383.txt" />
+    <Content Include="Archive\384.txt" />
+    <Content Include="Archive\385.txt" />
+    <Content Include="Archive\386.txt" />
+    <Content Include="Archive\387.txt" />
+    <Content Include="Archive\388.txt" />
+    <Content Include="Archive\389.txt" />
+    <Content Include="Archive\39.txt" />
+    <Content Include="Archive\390.txt" />
+    <Content Include="Archive\391.txt" />
+    <Content Include="Archive\392.txt" />
+    <Content Include="Archive\393.txt" />
+    <Content Include="Archive\394.txt" />
+    <Content Include="Archive\395.txt" />
+    <Content Include="Archive\396.txt" />
+    <Content Include="Archive\397.txt" />
+    <Content Include="Archive\398.txt" />
+    <Content Include="Archive\399.txt" />
+    <Content Include="Archive\4.txt" />
+    <Content Include="Archive\40.txt" />
+    <Content Include="Archive\400.txt" />
+    <Content Include="Archive\401.txt" />
+    <Content Include="Archive\402.txt" />
+    <Content Include="Archive\403.txt" />
+    <Content Include="Archive\404.txt" />
+    <Content Include="Archive\405.txt" />
+    <Content Include="Archive\406.txt" />
+    <Content Include="Archive\407.txt" />
+    <Content Include="Archive\408.txt" />
+    <Content Include="Archive\409.txt" />
+    <Content Include="Archive\41.txt" />
+    <Content Include="Archive\410.txt" />
+    <Content Include="Archive\411.txt" />
+    <Content Include="Archive\412.txt" />
+    <Content Include="Archive\413.txt" />
+    <Content Include="Archive\414.txt" />
+    <Content Include="Archive\415.txt" />
+    <Content Include="Archive\416.txt" />
+    <Content Include="Archive\417.txt" />
+    <Content Include="Archive\418.txt" />
+    <Content Include="Archive\419.txt" />
+    <Content Include="Archive\42.txt" />
+    <Content Include="Archive\420.txt" />
+    <Content Include="Archive\421.txt" />
+    <Content Include="Archive\422.txt" />
+    <Content Include="Archive\423.txt" />
+    <Content Include="Archive\424.txt" />
+    <Content Include="Archive\425.txt" />
+    <Content Include="Archive\426.txt" />
+    <Content Include="Archive\427.txt" />
+    <Content Include="Archive\428.txt" />
+    <Content Include="Archive\429.txt" />
+    <Content Include="Archive\43.txt" />
+    <Content Include="Archive\430.txt" />
+    <Content Include="Archive\431.txt" />
+    <Content Include="Archive\432.txt" />
+    <Content Include="Archive\433.txt" />
+    <Content Include="Archive\434.txt" />
+    <Content Include="Archive\435.txt" />
+    <Content Include="Archive\436.txt" />
+    <Content Include="Archive\437.txt" />
+    <Content Include="Archive\438.txt" />
+    <Content Include="Archive\439.txt" />
+    <Content Include="Archive\44.txt" />
+    <Content Include="Archive\440.txt" />
+    <Content Include="Archive\441.txt" />
+    <Content Include="Archive\442.txt" />
+    <Content Include="Archive\443.txt" />
+    <Content Include="Archive\444.txt" />
+    <Content Include="Archive\445.txt" />
+    <Content Include="Archive\446.txt" />
+    <Content Include="Archive\447.txt" />
+    <Content Include="Archive\448.txt" />
+    <Content Include="Archive\449.txt" />
+    <Content Include="Archive\45.txt" />
+    <Content Include="Archive\450.txt" />
+    <Content Include="Archive\451.txt" />
+    <Content Include="Archive\452.txt" />
+    <Content Include="Archive\453.txt" />
+    <Content Include="Archive\454.txt" />
+    <Content Include="Archive\455.txt" />
+    <Content Include="Archive\456.txt" />
+    <Content Include="Archive\457.txt" />
+    <Content Include="Archive\458.txt" />
+    <Content Include="Archive\459.txt" />
+    <Content Include="Archive\46.txt" />
+    <Content Include="Archive\460.txt" />
+    <Content Include="Archive\461.txt" />
+    <Content Include="Archive\462.txt" />
+    <Content Include="Archive\463.txt" />
+    <Content Include="Archive\464.txt" />
+    <Content Include="Archive\465.txt" />
+    <Content Include="Archive\466.txt" />
+    <Content Include="Archive\467.txt" />
+    <Content Include="Archive\468.txt" />
+    <Content Include="Archive\469.txt" />
+    <Content Include="Archive\47.txt" />
+    <Content Include="Archive\470.txt" />
+    <Content Include="Archive\471.txt" />
+    <Content Include="Archive\472.txt" />
+    <Content Include="Archive\473.txt" />
+    <Content Include="Archive\474.txt" />
+    <Content Include="Archive\475.txt" />
+    <Content Include="Archive\476.txt" />
+    <Content Include="Archive\477.txt" />
+    <Content Include="Archive\478.txt" />
+    <Content Include="Archive\479.txt" />
+    <Content Include="Archive\48.txt" />
+    <Content Include="Archive\480.txt" />
+    <Content Include="Archive\481.txt" />
+    <Content Include="Archive\482.txt" />
+    <Content Include="Archive\483.txt" />
+    <Content Include="Archive\484.txt" />
+    <Content Include="Archive\485.txt" />
+    <Content Include="Archive\486.txt" />
+    <Content Include="Archive\487.txt" />
+    <Content Include="Archive\488.txt" />
+    <Content Include="Archive\489.txt" />
+    <Content Include="Archive\49.txt" />
+    <Content Include="Archive\490.txt" />
+    <Content Include="Archive\491.txt" />
+    <Content Include="Archive\492.txt" />
+    <Content Include="Archive\493.txt" />
+    <Content Include="Archive\494.txt" />
+    <Content Include="Archive\495.txt" />
+    <Content Include="Archive\496.txt" />
+    <Content Include="Archive\497.txt" />
+    <Content Include="Archive\498.txt" />
+    <Content Include="Archive\499.txt" />
+    <Content Include="Archive\5.txt" />
+    <Content Include="Archive\50.txt" />
+    <Content Include="Archive\500.txt" />
+    <Content Include="Archive\501.txt" />
+    <Content Include="Archive\502.txt" />
+    <Content Include="Archive\503.txt" />
+    <Content Include="Archive\504.txt" />
+    <Content Include="Archive\505.txt" />
+    <Content Include="Archive\506.txt" />
+    <Content Include="Archive\507.txt" />
+    <Content Include="Archive\508.txt" />
+    <Content Include="Archive\509.txt" />
+    <Content Include="Archive\51.txt" />
+    <Content Include="Archive\510.txt" />
+    <Content Include="Archive\511.txt" />
+    <Content Include="Archive\512.txt" />
+    <Content Include="Archive\513.txt" />
+    <Content Include="Archive\514.txt" />
+    <Content Include="Archive\515.txt" />
+    <Content Include="Archive\516.txt" />
+    <Content Include="Archive\517.txt" />
+    <Content Include="Archive\518.txt" />
+    <Content Include="Archive\519.txt" />
+    <Content Include="Archive\52.txt" />
+    <Content Include="Archive\520.txt" />
+    <Content Include="Archive\521.txt" />
+    <Content Include="Archive\522.txt" />
+    <Content Include="Archive\523.txt" />
+    <Content Include="Archive\524.txt" />
+    <Content Include="Archive\525.txt" />
+    <Content Include="Archive\526.txt" />
+    <Content Include="Archive\527.txt" />
+    <Content Include="Archive\528.txt" />
+    <Content Include="Archive\529.txt" />
+    <Content Include="Archive\53.txt" />
+    <Content Include="Archive\530.txt" />
+    <Content Include="Archive\531.txt" />
+    <Content Include="Archive\532.txt" />
+    <Content Include="Archive\533.txt" />
+    <Content Include="Archive\534.txt" />
+    <Content Include="Archive\535.txt" />
+    <Content Include="Archive\536.txt" />
+    <Content Include="Archive\537.txt" />
+    <Content Include="Archive\538.txt" />
+    <Content Include="Archive\539.txt" />
+    <Content Include="Archive\54.txt" />
+    <Content Include="Archive\540.txt" />
+    <Content Include="Archive\541.txt" />
+    <Content Include="Archive\542.txt" />
+    <Content Include="Archive\543.txt" />
+    <Content Include="Archive\544.txt" />
+    <Content Include="Archive\545.txt" />
+    <Content Include="Archive\546.txt" />
+    <Content Include="Archive\547.txt" />
+    <Content Include="Archive\548.txt" />
+    <Content Include="Archive\549.txt" />
+    <Content Include="Archive\55.txt" />
+    <Content Include="Archive\550.txt" />
+    <Content Include="Archive\551.txt" />
+    <Content Include="Archive\552.txt" />
+    <Content Include="Archive\553.txt" />
+    <Content Include="Archive\554.txt" />
+    <Content Include="Archive\555.txt" />
+    <Content Include="Archive\556.txt" />
+    <Content Include="Archive\557.txt" />
+    <Content Include="Archive\558.txt" />
+    <Content Include="Archive\559.txt" />
+    <Content Include="Archive\56.txt" />
+    <Content Include="Archive\560.txt" />
+    <Content Include="Archive\561.txt" />
+    <Content Include="Archive\562.txt" />
+    <Content Include="Archive\563.txt" />
+    <Content Include="Archive\564.txt" />
+    <Content Include="Archive\565.txt" />
+    <Content Include="Archive\566.txt" />
+    <Content Include="Archive\567.txt" />
+    <Content Include="Archive\568.txt" />
+    <Content Include="Archive\569.txt" />
+    <Content Include="Archive\57.txt" />
+    <Content Include="Archive\570.txt" />
+    <Content Include="Archive\571.txt" />
+    <Content Include="Archive\572.txt" />
+    <Content Include="Archive\573.txt" />
+    <Content Include="Archive\574.txt" />
+    <Content Include="Archive\575.txt" />
+    <Content Include="Archive\576.txt" />
+    <Content Include="Archive\577.txt" />
+    <Content Include="Archive\578.txt" />
+    <Content Include="Archive\579.txt" />
+    <Content Include="Archive\58.txt" />
+    <Content Include="Archive\580.txt" />
+    <Content Include="Archive\581.txt" />
+    <Content Include="Archive\582.txt" />
+    <Content Include="Archive\583.txt" />
+    <Content Include="Archive\584.txt" />
+    <Content Include="Archive\585.txt" />
+    <Content Include="Archive\586.txt" />
+    <Content Include="Archive\587.txt" />
+    <Content Include="Archive\588.txt" />
+    <Content Include="Archive\589.txt" />
+    <Content Include="Archive\59.txt" />
+    <Content Include="Archive\590.txt" />
+    <Content Include="Archive\591.txt" />
+    <Content Include="Archive\592.txt" />
+    <Content Include="Archive\593.txt" />
+    <Content Include="Archive\594.txt" />
+    <Content Include="Archive\595.txt" />
+    <Content Include="Archive\596.txt" />
+    <Content Include="Archive\597.txt" />
+    <Content Include="Archive\598.txt" />
+    <Content Include="Archive\599.txt" />
+    <Content Include="Archive\6.txt" />
+    <Content Include="Archive\60.txt" />
+    <Content Include="Archive\600.txt" />
+    <Content Include="Archive\601.txt" />
+    <Content Include="Archive\602.txt" />
+    <Content Include="Archive\603.txt" />
+    <Content Include="Archive\604.txt" />
+    <Content Include="Archive\605.txt" />
+    <Content Include="Archive\606.txt" />
+    <Content Include="Archive\607.txt" />
+    <Content Include="Archive\608.txt" />
+    <Content Include="Archive\609.txt" />
+    <Content Include="Archive\61.txt" />
+    <Content Include="Archive\610.txt" />
+    <Content Include="Archive\611.txt" />
+    <Content Include="Archive\612.txt" />
+    <Content Include="Archive\613.txt" />
+    <Content Include="Archive\614.txt" />
+    <Content Include="Archive\615.txt" />
+    <Content Include="Archive\616.txt" />
+    <Content Include="Archive\617.txt" />
+    <Content Include="Archive\618.txt" />
+    <Content Include="Archive\619.txt" />
+    <Content Include="Archive\62.txt" />
+    <Content Include="Archive\620.txt" />
+    <Content Include="Archive\621.txt" />
+    <Content Include="Archive\622.txt" />
+    <Content Include="Archive\623.txt" />
+    <Content Include="Archive\624.txt" />
+    <Content Include="Archive\625.txt" />
+    <Content Include="Archive\626.txt" />
+    <Content Include="Archive\627.txt" />
+    <Content Include="Archive\628.txt" />
+    <Content Include="Archive\629.txt" />
+    <Content Include="Archive\63.txt" />
+    <Content Include="Archive\630.txt" />
+    <Content Include="Archive\631.txt" />
+    <Content Include="Archive\632.txt" />
+    <Content Include="Archive\633.txt" />
+    <Content Include="Archive\634.txt" />
+    <Content Include="Archive\635.txt" />
+    <Content Include="Archive\636.txt" />
+    <Content Include="Archive\637.txt" />
+    <Content Include="Archive\638.txt" />
+    <Content Include="Archive\639.txt" />
+    <Content Include="Archive\64.txt" />
+    <Content Include="Archive\640.txt" />
+    <Content Include="Archive\641.txt" />
+    <Content Include="Archive\642.txt" />
+    <Content Include="Archive\643.txt" />
+    <Content Include="Archive\644.txt" />
+    <Content Include="Archive\645.txt" />
+    <Content Include="Archive\646.txt" />
+    <Content Include="Archive\647.txt" />
+    <Content Include="Archive\648.txt" />
+    <Content Include="Archive\649.txt" />
+    <Content Include="Archive\65.txt" />
+    <Content Include="Archive\650.txt" />
+    <Content Include="Archive\651.txt" />
+    <Content Include="Archive\652.txt" />
+    <Content Include="Archive\653.txt" />
+    <Content Include="Archive\654.txt" />
+    <Content Include="Archive\655.txt" />
+    <Content Include="Archive\656.txt" />
+    <Content Include="Archive\657.txt" />
+    <Content Include="Archive\658.txt" />
+    <Content Include="Archive\659.txt" />
+    <Content Include="Archive\66.txt" />
+    <Content Include="Archive\660.txt" />
+    <Content Include="Archive\661.txt" />
+    <Content Include="Archive\662.txt" />
+    <Content Include="Archive\663.txt" />
+    <Content Include="Archive\664.txt" />
+    <Content Include="Archive\665.txt" />
+    <Content Include="Archive\666.txt" />
+    <Content Include="Archive\667.txt" />
+    <Content Include="Archive\668.txt" />
+    <Content Include="Archive\669.txt" />
+    <Content Include="Archive\67.txt" />
+    <Content Include="Archive\670.txt" />
+    <Content Include="Archive\671.txt" />
+    <Content Include="Archive\672.txt" />
+    <Content Include="Archive\673.txt" />
+    <Content Include="Archive\674.txt" />
+    <Content Include="Archive\675.txt" />
+    <Content Include="Archive\676.txt" />
+    <Content Include="Archive\677.txt" />
+    <Content Include="Archive\678.txt" />
+    <Content Include="Archive\679.txt" />
+    <Content Include="Archive\68.txt" />
+    <Content Include="Archive\680.txt" />
+    <Content Include="Archive\681.txt" />
+    <Content Include="Archive\682.txt" />
+    <Content Include="Archive\683.txt" />
+    <Content Include="Archive\684.txt" />
+    <Content Include="Archive\685.txt" />
+    <Content Include="Archive\686.txt" />
+    <Content Include="Archive\687.txt" />
+    <Content Include="Archive\688.txt" />
+    <Content Include="Archive\689.txt" />
+    <Content Include="Archive\69.txt" />
+    <Content Include="Archive\690.txt" />
+    <Content Include="Archive\691.txt" />
+    <Content Include="Archive\692.txt" />
+    <Content Include="Archive\693.txt" />
+    <Content Include="Archive\694.txt" />
+    <Content Include="Archive\695.txt" />
+    <Content Include="Archive\7.txt" />
+    <Content Include="Archive\70.txt" />
+    <Content Include="Archive\71.txt" />
+    <Content Include="Archive\72.txt" />
+    <Content Include="Archive\73.txt" />
+    <Content Include="Archive\74.txt" />
+    <Content Include="Archive\75.txt" />
+    <Content Include="Archive\76.txt" />
+    <Content Include="Archive\77.txt" />
+    <Content Include="Archive\78.txt" />
+    <Content Include="Archive\79.txt" />
+    <Content Include="Archive\8.txt" />
+    <Content Include="Archive\80.txt" />
+    <Content Include="Archive\81.txt" />
+    <Content Include="Archive\82.txt" />
+    <Content Include="Archive\83.txt" />
+    <Content Include="Archive\84.txt" />
+    <Content Include="Archive\85.txt" />
+    <Content Include="Archive\86.txt" />
+    <Content Include="Archive\87.txt" />
+    <Content Include="Archive\88.txt" />
+    <Content Include="Archive\89.txt" />
+    <Content Include="Archive\9.txt" />
+    <Content Include="Archive\90.txt" />
+    <Content Include="Archive\91.txt" />
+    <Content Include="Archive\92.txt" />
+    <Content Include="Archive\93.txt" />
+    <Content Include="Archive\94.txt" />
+    <Content Include="Archive\95.txt" />
+    <Content Include="Archive\96.txt" />
+    <Content Include="Archive\97.txt" />
+    <Content Include="Archive\98.txt" />
+    <Content Include="Archive\99.txt" />
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SDA_Logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

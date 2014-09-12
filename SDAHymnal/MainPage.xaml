@@ -1,0 +1,108 @@
+﻿<phone:PhoneApplicationPage
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+	xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768" 
+	x:Class="SDAHymnal.MainPage"
+	d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+	FontFamily="{StaticResource PhoneFontFamilyNormal}"
+	FontSize="{StaticResource PhoneFontSizeNormal}"
+	Foreground="{StaticResource PhoneForegroundBrush}"
+	SupportedOrientations="Portrait" Orientation="Portrait" 
+	shell:SystemTray.IsVisible="True">
+
+	<!--LayoutRoot is the root grid where all page content is placed-->
+	<Grid x:Name="LayoutRoot" Background="Transparent">
+		<!--Pivot Control-->
+		<Image Margin="43,38,37,365" Source="SDA_Logo.png"  d:LayoutOverrides="Height" Opacity="0.4" />
+		
+		
+		
+<!--Pivot Control-->
+		<controls:Pivot Name="pivot" Title="SDA Hymnal">
+			<!--Pivot item one-->
+            <controls:PivotItem Name="pivot_open" Header="open">
+				
+				<Grid Margin="0,8,0,0">
+					
+					<Border>
+						<Grid Margin="2,0,0,2">
+							<Grid.RowDefinitions>
+								<RowDefinition/>
+								<RowDefinition/>
+								<RowDefinition/>
+								<RowDefinition/>
+								<RowDefinition/>
+							</Grid.RowDefinitions>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition/>
+								<ColumnDefinition/>
+								<ColumnDefinition/>
+							</Grid.ColumnDefinitions>
+							<TextBlock Name="textbox_number" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Enter a number" Grid.ColumnSpan="3" Margin="4,28,8,27" Width="440" VerticalAlignment="Center" FontSize="50" TextAlignment="Center" Height="64" />
+                            <Button x:Name="button_7" Content="7" Grid.Column="0" Margin="0,0,0,0" Grid.Row="1" Background="{StaticResource PhoneChromeBrush}" Click="button_7_Click" FontSize="30" />
+                            <Button x:Name="button_8" Content="8" Grid.Column="1" Margin="0,0,0,0" Grid.Row="1" Background="{StaticResource PhoneChromeBrush}" Click="button_8_Click" FontSize="30" />
+                            <Button x:Name="button_9" Content="9" Grid.Column="2" Margin="0,0,0,0" Grid.Row="1" Background="{StaticResource PhoneChromeBrush}" Click="button_9_Click" FontSize="30" />
+                            <Button x:Name="button_1" Content="1" Grid.Column="0" Margin="0,0,0,0" Grid.Row="3" Background="{StaticResource PhoneChromeBrush}" Click="button_1_Click" FontSize="30" />
+                            <Button x:Name="button_2" Content="2" Grid.Column="1" Margin="0,0,0,0" Grid.Row="3" Background="{StaticResource PhoneChromeBrush}" Click="button_2_Click" FontSize="30" />
+                            <Button x:Name="button_3" Content="3" Grid.Column="2" Margin="0,0,0,0" Grid.Row="3" Background="{StaticResource PhoneChromeBrush}" Click="button_3_Click" FontSize="30" />
+                            <Button x:Name="button_4" Content="4" Grid.Column="0" Margin="0,0,0,0" Grid.Row="2" Background="{StaticResource PhoneChromeBrush}" Click="button_4_Click" FontSize="30" />
+                            <Button x:Name="button_5" Content="5" Grid.Column="1" Margin="0,0,0,0" Grid.Row="2" Background="{StaticResource PhoneChromeBrush}" Click="button_5_Click" FontSize="30" />
+                            <Button x:Name="button_6" Content="6" Grid.Column="2" Margin="0,0,0,0" Grid.Row="2" Background="{StaticResource PhoneChromeBrush}" Click="button_6_Click" FontSize="30" />
+                            <Button x:Name="button_0" Content="0" Grid.Column="1" Margin="0,0,0,0" Grid.Row="4" Background="{StaticResource PhoneChromeBrush}" Click="button_0_Click" FontSize="30" />
+                            <Button x:Name="ok_button" Content="OK" Grid.Column="2" Margin="0,0,0,0" Grid.Row="4" Background="{x:Null}" Width="130" Height="80" Click="ok_button_Click" />
+                            <Button Background="{x:Null}" Content="Clear" Grid.Column="0" Height="80" Margin="0,0,0,0" Name="button1" Width="130" Grid.Row="4" Click="button1_Click" />
+                        </Grid>
+					</Border>
+					
+					
+				</Grid>
+				
+				
+				<!--Double line list with text wrapping-->
+			</controls:PivotItem>
+
+			<!--Pivot item two-->
+			<controls:PivotItem Name="pivot_hymn" Header="hymn">
+                <Grid x:Name="ContentGrid" Grid.Row="1" >
+                    <ScrollViewer Height="617" HorizontalAlignment="Left" Name="scrollViewer1" VerticalAlignment="Top" Width="420">
+                        <TextBlock Name="textBlock_Hymn" Width="415" TextWrapping="Wrap" Text="Open a Hymn first." Margin="1" AllowDrop="False" FontWeight="Normal" FontStretch="Condensed" FontSize="30" />
+				<!--Triple line list no text wrapping-->
+                    </ScrollViewer>
+                </Grid>
+            </controls:PivotItem>
+
+            <controls:PivotItem Name="pivot_about" Header="about">
+				
+					<!--Triple line list no text wrapping-->
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition/>
+							<RowDefinition/>
+							<RowDefinition/>
+							<RowDefinition/>
+						</Grid.RowDefinitions>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition/>
+						</Grid.ColumnDefinitions>
+						<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Author" VerticalAlignment="Top" Margin="8,8,0,0" Grid.Row="0" FontSize="48"/>
+						<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Page" VerticalAlignment="Top" Margin="8,8,0,0" Grid.Row="1"  FontSize="48"/>
+						<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Igor Pontes" Margin="17,0,0,41" VerticalAlignment="Bottom" FontSize="26.667" Height="43" Foreground="#FFA7A7A7"/>
+                        <HyperlinkButton Content="http://about.me/igorpontes"  Height="30" HorizontalAlignment="Left" Margin="4,76,0,0" FontSize="26.667" Name="hyperlinkButton1" VerticalAlignment="Top" Width="354" Grid.Row="1" Foreground="#FFA7A7A7" Click="hyperlinkButton1_Click" />
+
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Version" VerticalAlignment="Top" Margin="8,8,0,0" Grid.Row="2" FontSize="48"/>
+                    <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="1.2" Margin="17,0,0,41" VerticalAlignment="Bottom" Grid.Row="2" FontSize="26.667" Height="43" Foreground="#FFA7A7A7"/>
+
+                </Grid>
+				</controls:PivotItem>
+			
+			
+
+		</controls:Pivot>
+        
+    </Grid>
+</phone:PhoneApplicationPage>
